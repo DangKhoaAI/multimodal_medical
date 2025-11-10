@@ -54,7 +54,7 @@ medical-multimodal/
 └── templates/             # HTML templates
 ```
 
-## 🚀 Quick Start
+##  Quick Start
 
 ### Prerequisites
 
@@ -169,7 +169,7 @@ IG_GRADIENT_THRESHOLD = 0.70
 - **Architecture**: Dense layers with dropout and batch normalization
 - **Output**: Single probability score for abnormality detection
 
-## 📊 Explainability Features
+##  Explainability Features
 
 ### Image Explanations (Grad-CAM)
 - **Heatmap Generation**: Highlights important image regions
@@ -202,7 +202,7 @@ IG_GRADIENT_THRESHOLD = 0.70
 3. Modify data loading in `data/loader.py`
 4. Retrain models using scripts in `scripts/`
 
-## 📋 Requirements
+##  Requirements
 
 ### Core Dependencies
 - **TensorFlow/Keras**: Deep learning framework
