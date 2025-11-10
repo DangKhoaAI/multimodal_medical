@@ -2,7 +2,7 @@
 
 A comprehensive deep learning system that combines medical imaging (X-ray) and clinical text data for improved diagnostic accuracy. This project implements multimodal neural networks with explainable AI (XAI) capabilities for medical diagnosis.
 
-## 🎯 Project Overview
+##  Project Overview
 
 This project develops a multimodal AI system that:
 - Analyzes medical X-ray images using DenseNet121 (pre-trained on ChestX-ray14)
@@ -10,7 +10,7 @@ This project develops a multimodal AI system that:
 - Combines both modalities for enhanced diagnostic predictions
 - Provides explainable AI visualizations using Grad-CAM and Integrated Gradients
 
-## 🏗️ Architecture
+##  Architecture
 
 ### Multimodal Model Components
 
@@ -25,7 +25,7 @@ This project develops a multimodal AI system that:
 - **Multiple Inference Modes**: Text-only, image-only, and multimodal predictions
 - **Real-time Explanations**: Visual heatmaps and highlighted text importance
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 medical-multimodal/
@@ -100,7 +100,7 @@ docker build -t medical-multimodal .
 docker run -p 5000:5000 medical-multimodal
 ```
 
-## 💻 Usage
+##  Usage
 
 ### Web Interface
 
@@ -129,7 +129,7 @@ Each prediction provides:
   - Word importance highlighting for text
 - **Interactive visualizations**: Plotly-based charts for text explanations
 
-## 🔧 Configuration
+##  Configuration
 
 Key parameters in `config.py`:
 
@@ -150,7 +150,7 @@ MAX_SEQ_LENGTH = 140
 IG_GRADIENT_THRESHOLD = 0.70
 ```
 
-## 🧠 Model Details
+##  Model Details
 
 ### Text Model
 - **Architecture**: Multi-filter CNN with embedding layer
@@ -183,7 +183,7 @@ IG_GRADIENT_THRESHOLD = 0.70
 - **Interactive Plots**: Plotly-based importance visualization
 - **Threshold Filtering**: Configurable importance thresholds
 
-## 🛠️ Development
+##  Development
 
 ### Adding New Models
 1. Implement model architecture in `models/`
@@ -216,7 +216,7 @@ IG_GRADIENT_THRESHOLD = 0.70
 - **tf-keras-vis**: Grad-CAM implementation
 - **Integrated Gradients**: Custom implementation included
 
-## 🐳 Docker Support
+##  Docker Support
 
 The project includes Docker configuration for easy deployment:
 
@@ -226,33 +226,10 @@ docker build -t medical-multimodal .
 docker run -p 5000:5000 medical-multimodal
 ```
 
-## 📈 Performance
+## Performance
 
 The multimodal approach typically shows improved performance over single-modality models:
 - **Text-only**: Baseline performance on clinical reports
 - **Image-only**: DenseNet121 performance on X-rays
 - **Multimodal**: Enhanced accuracy through information fusion
 
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create a feature branch
-3. Implement changes with appropriate tests
-4. Update documentation
-5. Submit a pull request
-
-## 📄 License
-
-This project is developed for educational and research purposes. Please ensure compliance with medical data regulations when using with real patient data.
-
-## 🔮 Future Enhancements
-
-- **Additional Modalities**: Integration of lab results, vital signs
-- **Advanced Fusion**: Attention-based multimodal fusion
-- **Model Interpretability**: SHAP values, LIME integration
-- **Clinical Validation**: Extensive testing with medical professionals
-- **Real-time Processing**: Optimized inference pipeline
-
-
-
-**Note**: This system is designed for research and educational purposes. Always consult healthcare professionals for medical decisions.
